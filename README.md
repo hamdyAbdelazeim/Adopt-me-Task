@@ -1,8 +1,25 @@
-# React + Vite
+# Adopt Me Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+🐾 This project is a web application for adopting pets. It is built using React.js and utilizes the Context API, React Query, React Portal, and custom hooks to manage state and handle data fetching. The project showcases advanced React.js skills.
 
-Currently, two official plugins are available:
+## Technologies Used
+- React.js
+- Context API
+- React Query
+- React Portal
+- Custom Hooks
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+1. Clone the repository: `git clone https://github.com/hamdyAbdelazeim/Adopt-me-Task`
+2. Install dependencies: `npm install`
+3. Start the development server: `npm  run dev`
+
+## Usage
+- Browse the website to view available pets.
+- Use the adoption feature to adopt a pet.
+- Explore the different pages and functionalities of the application.
+
+## Credits
+- Created by Hamdy Abdelazim
+
