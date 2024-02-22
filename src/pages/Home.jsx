@@ -26,9 +26,12 @@ function Home() {
       <h1>Adopt me</h1>
       <div className='search-params'>
         <form>
-          <div className=' pet image-container'>
-            <img src={adoptedPet?.images[0] || hero} alt='' />
-          </div>
+          {adoptedPet && (
+            <div className=' pet image-container'>
+              <img src={adoptedPet?.images[0] || hero} alt={adoptedPet?.name} />
+            </div>
+          )}
+
           <label htmlFor='location'>
             Location
             <input
