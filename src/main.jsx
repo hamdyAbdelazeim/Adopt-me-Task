@@ -7,7 +7,14 @@ import App from './App.jsx'
 import './index.css'
 import AdoptedPetContext from './contexts/AdoptedPetContext.js'
 
-const queryClient = new QueryClient()
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      cacheTime: Infinity,
+      staleTime: Infinity,
+    },
+  },
+})
 
 function Main() {
   const adoptedPet = useState(null)
