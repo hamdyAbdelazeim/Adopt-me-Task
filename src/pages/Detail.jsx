@@ -9,7 +9,7 @@ import { Modal } from '../components/Modal'
 function Detail() {
   const { id } = useParams()
   const { data, isPending, error } = useGetDetails(id)
-  const hero = 'http://pets-images.dev-apis.com/pets/none.jpg' // Default placeholder image URL
+  const hero = 'https://pets-images.dev-apis.com/pets/none.jpg' // Default placeholder image URL
   const pet = data?.pets[0]
   const [showModal, setShowModal] = useState(false)
   const navigate = useNavigate()

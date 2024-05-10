@@ -7,12 +7,12 @@ const useGetPets = (searchParam) => {
     queryKey: ['pets', animal, breed, location],
     queryFn: () => {
       if (!breed) {
-        return fetch(`http://pets-v2.dev-apis.com/pets?animal=${animal}`).then(
+        return fetch(`https://pets-v2.dev-apis.com/pets?animal=${animal}`).then(
           (res) => res.json()
         )
       } else {
         return fetch(
-          `http://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}`
+          `https://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}`
         ).then((res) => res.json())
       }
     },

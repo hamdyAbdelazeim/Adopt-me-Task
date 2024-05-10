@@ -5,7 +5,7 @@ import useGetPets from '../hooks/useGetPets'
 import AdoptedPetContext from '../contexts/AdoptedPetContext'
 
 function Home() {
-  const hero = 'http://pets-images.dev-apis.com/pets/none.jpg'
+  const hero = 'https://pets-images.dev-apis.com/pets/none.jpg'
   const [searchParam, setSearchParam] = useState({
     animal: '',
     breed: '',
